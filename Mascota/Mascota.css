@@ -17,6 +17,6 @@
 }
 
 /* Agrega un estilo especial cuando se hace clic en la mascota */
-.mascota:active {   
+.mascota:active, .mascota:hover {   
     transform: scale(1.2); /* Escala ligeramente la imagen cuando se hace clic */
 }

@@ -1,0 +1,74 @@
+.navbar {
+    background-color: #2f7692; /* Color de fondo de la barra de navegación */
+    color: #fff; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    display: flex; /* Mostrar elementos en línea */
+    justify-content: space-between; /* Distribuir elementos a los lados */
+    position: absolute; /* Colocar la barra en la parte inferior */
+    bottom: 0; /* Alinear en la parte inferior */
+    left: 0;
+    right: 0;
+}
+
+.boton-imagen {
+    background-image: url('../Comida/filete.webp'); /* URL de la imagen */
+    background-size: cover; /* Ajustar la imagen al tamaño del elemento */
+    width: 50px; /* Ancho deseado */
+    height: 50px; /* Alto deseado */
+    cursor: pointer; /* Cursor de puntero al pasar el mouse */
+}
+
+.boton-imagen:hover {
+    width: 100px;
+    height: 100px;
+}
+
+.navbar-item {
+    margin-right: 20px; /* Espacio entre elementos */
+}
+
+/* Agrega estos estilos en tu archivo CSS */
+.modal {
+    display: none; /* Ocultar el modal por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    z-index: 1; /* Asegura que el modal esté en la parte superior */
+    overflow: auto; /* Habilita el desplazamiento si el contenido es demasiado largo */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.modal img {
+    max-width: 100%; /* Limita el ancho máximo al 100% del contenedor */
+    height: 80px; /* Mantiene la proporción de aspecto original */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+#cerrarModal {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+

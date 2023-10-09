@@ -1,0 +1,22 @@
+#mascota {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#mascota img {
+    max-width: 200px; /* Establece el ancho máximo */
+    height: auto; /* La altura se ajustará automáticamente */
+}
+
+.mascota {
+    max-width: 200px;
+    height: auto;
+    transition: transform 0.3s ease; /* Transición suave para la animación */
+}
+
+/* Agrega un estilo especial cuando se hace clic en la mascota */
+.mascota:active {   
+    transform: scale(1.2); /* Escala ligeramente la imagen cuando se hace clic */
+}

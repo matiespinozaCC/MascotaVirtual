@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mascota Virtual</title>
+    <script src="../Mascota/funciones.js"></script>
+    <link rel="stylesheet" href="../Mascota/Mascota.css">
+    <link rel="stylesheet" href="Principal.css">
+</head>
+<body>
+    <div id="btnComida" class="boton-imagen"></div>
+
+    <audio id="cosquillasAudio">
+        <source src="../Mascota/risa.m4a" type="audio/mpeg">
+        Tu navegador no admite la reproducción de audio.
+    </audio>
+
+    <audio id="audioComida">
+        <source src="../Comida/comer.m4a" type="audio/mpeg">
+        Tu navegador no admite la reproducción de audio.
+    </audio>
+
+    
+    <div id="mascota">
+        <img src="../Mascota/MascotaNormal.png" alt="Mascota Normal" class="mascota">
+    </div>   
+    <nav class="navbar">
+        <div class="navbar-item">Felicidad: <span id="felicidad">100%</span></div>
+        <div class="navbar-item">Hambre: <span id="hambre">0%</span></div>
+        <div class="navbar-item">Salud: <span id="salud">100%</span></div>
+    </nav> 
+    
+    <div id="modalComida" class="modal">
+        <div class="modal-content">
+            <h2>Lista de Comida</h2>
+            <ul id="listaComida">
+                <li>
+                    <img src="../Comida/filete.webp" alt="Filete Asado">
+                    Filete Asado
+                    <span class="cantidad-comida">10 disponibles</span>
+                    <button class="btn-dar">Dar</button>
+                </li>
+                <li>
+                    <img src="../Comida/pollo.webp" alt="Pollo Asado">
+                    Pollo Asado
+                    <span class="cantidad-comida">5 disponibles</span>
+                    <button class="btn-dar">Dar</button>
+                </li>
+                <!-- Agrega más elementos de comida con imágenes, cantidad y botón "Dar" según sea necesario -->
+            </ul>
+            <button id="cerrarModal">Cerrar</button>
+        </div>
+    </div>
+
+</body>
+</html>
